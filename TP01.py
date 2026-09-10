@@ -26,7 +26,4 @@ def agecanineshumain():
         age_humain = age * 10.5
     else:
         age_humain = 21 + (age - 2) * 7
-    print("L'âge du chien en années humaines est : ", age_humain)
-#Exercice 04 :
-def calcul_approximation_pi():
-    phi = 0
+    print("L'âge du chien en années humaines est : ", age_humain)#Exercice 04 :
