@@ -1,5 +1,4 @@
 #Exercice 01 :
-
 def IMC():
     Poids= int(input("Entrez votre poids en kg : "))
     taille= float(input("Entrez votre taille en m : "))
@@ -28,4 +27,6 @@ def agecanineshumain():
     else:
         age_humain = 21 + (age - 2) * 7
     print("L'âge du chien en années humaines est : ", age_humain)
-
+#Exercice 04 :
+def calcul_approximation_pi():
+    phi = 0
