@@ -1,6 +1,7 @@
 #Exercice 06 :
 def calcul():
     opperation = input("type d'operation souhaité : (a)ddition, (s)oustraction, (m)ultiplication, (d)ivision : ")
+    opperation = opperation.lower()
     nombre_1= int(input("Entrez un nombre 1  : "))
     nombre_2 = int(input("Entrez un nombre 2  : "))
     if opperation == "a":
@@ -14,5 +15,15 @@ def calcul():
             resultat = print("division impossible")
         else: 
             resultat = nombre_1 / nombre_2
+    else:
+        print("operation non compris")
     print("Le resultat est : ", resultat)
+    recalculer = input("voulez vous recalculer ? (o/n) : ")
+    recalculer = recalculer.lower()
+    if recalculer == "o":
+        calcul()
+    if recalculer == "n":
+        print("fin du programme")
+    else:
+        print("reponse non compris")
 calcul()
