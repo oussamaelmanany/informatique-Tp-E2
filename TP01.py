@@ -27,22 +27,38 @@ def agecanineshumain():
     else:
         age_humain = 21 + (age - 2) * 7
     print("L'âge du chien en années humaines est : ", age_humain)
+
 #Exercice 05:
-def decimal_to_binary():
-    n = int(input("Entrez un nombre décimal :"))
-    if n = 0:
-        return "0"
-    elif n>0 : 
-        return bin(n)
-    else:
-        return "-" + bin(abs(n))
-#Exercice 06:
 def decimal_to_binaire():
-    q = int(input("entrer un nombre décimal:"))
-    resultat = []
-    r = q % 2
-    resultat.append(str(r))
-    
+    q = int(input("entrer un nombre décimal : "))
+    binaire = ""
+    if q ==0 :
+        print("0")
+    else:
+        while q!=0:
+            r = q%2
+            binaire = str(r) + binaire
+            q = q//2
+    print("Le nombre binaire est : ", binaire)
+
+#Exercice 04:
+def approphi():
+    phi_appro = 3.00
+    phiutili = input("Entrez la valeur de phi : ")
+    N= int(phiutili)
+    if N < 0:
+        print("Erreur : la valeur de phi doit être positive.")
+    else:
+        if N <= 0:
+            print(f"La valeur approchée de phi est :{phi_appro}")
+            for i in range(2, N + 1):
+                k = i - 1 
+                d = 2 * k 
+                terme = signe * (4 / (d * (d + 1) * (d + 2)))
+                pi_approx += terme
+                print(f"Approximation {i} : {pi_approx}")
+
+        
 
 
 
