@@ -26,4 +26,26 @@ def agecanineshumain():
         age_humain = age * 10.5
     else:
         age_humain = 21 + (age - 2) * 7
-    print("L'âge du chien en années humaines est : ", age_humain)#Exercice 04 :
+    print("L'âge du chien en années humaines est : ", age_humain)
+#Exercice 05:
+def decimal_to_binary():
+    n = int(input("Entrez un nombre décimal :"))
+    if n = 0:
+        return "0"
+    elif n>0 : 
+        return bin(n)
+    else:
+        return "-" + bin(abs(n))
+#Exercice 06:
+def decimal_to_binaire():
+    q = int(input("entrer un nombre décimal:"))
+    resultat = []
+    r = q % 2
+    resultat.append(str(r))
+    
+
+
+
+
+
+
