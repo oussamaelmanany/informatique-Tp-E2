@@ -1,3 +1,4 @@
+"""
 import copy
 #EXERCICE 01 : 
 a = ['A']
@@ -30,10 +31,32 @@ mike = classDict["class"]["student"]
 classDict["class"]["student"]= [mike]
 print(classDict)
 # 5 :
-ted = ["name" : "ted",
+ted = "name" : "ted",
                      "marks" : {
                           "physics" : 34,
                           "history" : 99
-                                            }]
-classDict["class"]["student"].insert(ted)
+                                            }
+classDict["class"]["student"].append(ted)
 print(classDict)
+#7 :
+classDict["class"]["student"]["marks"]["average"] = len(sum(classDict["class"]["student"]["marks"])/len(classDict["class"]["student"]["marks"]))
+#8 :
+print(classDict)
+"""
+#EXERCICE 03 :
+import random
+n = random.randint(3, 99)
+tab = [random.randint(0, 500) for _ in range(n)]
+print(tab)
+def arediff(tab):
+    liste_vue = []
+    for num in tab:
+        if num in liste_vue:
+            return False 
+        else:
+            liste_vue.append(num)
+     return True
+
+print("Tous différents ?", arediff(tab))
+
+        
