@@ -42,7 +42,7 @@ print(classDict)
 classDict["class"]["student"]["marks"]["average"] = len(sum(classDict["class"]["student"]["marks"])/len(classDict["class"]["student"]["marks"]))
 #8 :
 print(classDict)
-"""
+
 #EXERCICE 03 :
 import random
 n = random.randint(3, 99)
@@ -56,7 +56,25 @@ def arediff(tab):
         else:
             liste_vue.append(num)
      return True
-
 print("Tous différents ?", arediff(tab))
+"""
+#EXERCICE 04:
+p = ["10", "2", "C", "D", "+"]
+def calculScore(operations):
+    pile = []
+    for op in operations:
+        if op == "C":
+            pile.pop()
+        elif op == "D":
+            pile.append(pile[-1] * 2)
+        elif op == "+":
+            pile.append(pile[-1] + pile[-2]) 
+        else:
+            pile.append(int(op))
+    return sum(pile)
+
+print(calculScore(p))
+
+
 
         
