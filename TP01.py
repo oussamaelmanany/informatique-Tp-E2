@@ -58,10 +58,4 @@ def approphi():
                 pi_approx += terme
                 print(f"Approximation {i} : {pi_approx}")
 
-        
-
-
-
-
-
 

@@ -1,4 +1,3 @@
-"""
 import copy
 #EXERCICE 01 : 
 a = ['A']
@@ -57,7 +56,6 @@ def arediff(tab):
             liste_vue.append(num)
      return True
 print("Tous différents ?", arediff(tab))
-"""
 #EXERCICE 04:
 p = ["10", "2", "C", "D", "+"]
 def calculScore(operations):
@@ -75,6 +73,26 @@ def calculScore(operations):
 
 print(calculScore(p))
 
+#EXERCICE 05 : 
+# 1 :
+import collections
+def ajtcoeff(polynome, coef):
+    poly = collections.deque(polynome)
+    if len(poly) >= 3 :
+        print("polynome invalide")
+     else :
+        poly.append(coef)
+     return poly
+# 2 :
+def saisiepoly():
+    coef = -1
+    n=0
+    polynome = collections.deque(coef)
+    while n < 3:
+        coef = int(input("saisir le coef"))
+        polynome.append(coef)
+        n +=1
+     return polynome
 
 
         
